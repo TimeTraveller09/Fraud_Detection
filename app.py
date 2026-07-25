@@ -6,6 +6,12 @@ import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
 
+try:
+    with open("UPI Fraud Detection updated.pkl", "rb") as file:
+        model = pickle.load(file)
+except Exception as e:
+    st.error(f'Error Loading model:{e}')
+
 # Set page configurations
 st.set_page_config(
     page_title="UPI Fraud Shield",
