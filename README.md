@@ -13,17 +13,34 @@ Online payment fraud has become increasingly common with the rapid growth of dig
 
 This project aims to build a predictive machine learning model capable of distinguishing between legitimate and fraudulent UPI transactions using historical transaction data.
 
-# 🛠 Technologies Used
-Python
-Pandas
-NumPy
-Matplotlib
-Plotly Express
-Scikit-learn
-XGBoost
-Optuna
-Imbalanced-learn (SMOTE)
-Jupyter Notebook
+## 🛠️ Technologies Used
+
+### Programming Language
+- Python
+
+### Data Manipulation
+- Pandas
+- NumPy
+
+### Data Visualization
+- Matplotlib
+- Plotly Express
+
+### Machine Learning
+- Scikit-learn
+- XGBoost
+- Imbalanced-learn (SMOTE)
+
+### Hyperparameter Tuning
+- Optuna
+
+### Web Application
+- Streamlit
+
+### Development Tools
+- Jupyter Notebook
+- Git
+- GitHub
 
 # 📂 Project Workflow
 
