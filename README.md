@@ -26,26 +26,38 @@ Imbalanced-learn (SMOTE)
 Jupyter Notebook
 
 # 📂 Project Workflow
-Data Collection
-        ↓
-Data Cleaning
-        ↓
-Exploratory Data Analysis (EDA)
-        ↓
-Feature Engineering
-        ↓
-Train-Test Split
-        ↓
-SMOTE (Handle Class Imbalance)
-        ↓
-Model Training
-        ↓
-Hyperparameter Tuning using Optuna
-        ↓
-Model Evaluation
-        ↓
-Business Recommendations
+## 📂 Project Workflow
 
+```text
+📥 Data Collection
+        │
+        ▼
+🧹 Data Cleaning
+        │
+        ▼
+📊 Exploratory Data Analysis (EDA)
+        │
+        ▼
+⚙️ Feature Engineering
+        │
+        ▼
+✂️ Train-Test Split
+        │
+        ▼
+⚖️ SMOTE (Handle Class Imbalance)
+        │
+        ▼
+🤖 Model Training
+        │
+        ▼
+🎯 Hyperparameter Tuning (Optuna)
+        │
+        ▼
+📈 Model Evaluation
+        │
+        ▼
+💡 Business Recommendations
+```
 # 📊 Exploratory Data Analysis
 
 The dataset was analyzed to identify important transaction patterns and fraud characteristics.
@@ -62,7 +74,7 @@ Correlation heatmap
 Feature relationship analysis
 
 # 🤖 Machine Learning Models
-
+```
 The following models were trained and evaluated:
 
 Decision Tree Classifier
@@ -70,14 +82,14 @@ Random Forest Classifier
 Gradient Boosting Classifier
 XGBoost Classifier
 
-**Each model was evaluated using:**a
+Each model was evaluated using:
 
 Accuracy
 Precision
 Recall
 F1 Score
 ROC-AUC Score
-
+```
 # ⚙ Hyperparameter Optimization
 
 Instead of relying on default model parameters, Optuna was used to automatically search for optimal hyperparameter combinations.
