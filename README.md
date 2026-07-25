@@ -26,7 +26,6 @@ Imbalanced-learn (SMOTE)
 Jupyter Notebook
 
 # 📂 Project Workflow
-## 📂 Project Workflow
 
 ```text
 📥 Data Collection
