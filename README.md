@@ -1,5 +1,6 @@
 # Fraud_Detection
-📌 UPI Fraud Detection using Machine Learning
+**📌 UPI Fraud Detection using Machine Learning**
+
 📖 Project Overview
 
 This project develops a machine learning-based fraud detection system for identifying fraudulent UPI (Unified Payments Interface) transactions. The project performs exploratory data analysis (EDA), feature engineering, handles class imbalance using SMOTE, compares multiple machine learning models, and improves model performance through Optuna-based hyperparameter optimization.
