@@ -363,6 +363,19 @@ elif page == "🔎 Fraud Detector":
             year_val = tx_date.year
             month_val = tx_date.month
             
+            # Map Year and Month to their training LabelEncoder values
+            year_encoded = 1 if year_val >= 2024 else 0
+            months_name_map = {
+                'Apr': 0, 'Aug': 1, 'Dec': 2, 'Feb': 3, 'Jan': 4, 'Jul': 5,
+                'Jun': 6, 'Mar': 7, 'May': 8, 'Nov': 9, 'Oct': 10, 'Sep': 11
+            }
+            months_num_to_name = {
+                1:'Jan', 2:'Feb', 3:'Mar', 4:'Apr', 5:'May', 6:'Jun',
+                7:'Jul', 8:'Aug', 9:'Sep', 10:'Oct', 11:'Nov', 12:'Dec'
+            }
+            month_name = months_num_to_name.get(month_val, 'Jan')
+            month_encoded = months_name_map.get(month_name, 0)
+
             # Prepare feature dictionary matching model.feature_names_in_ exactly
             feature_dict = {}
             for col in model.feature_names_in_:
@@ -370,8 +383,8 @@ elif page == "🔎 Fraud Detector":
                 
             # Set direct numeric/date features
             feature_dict['amount'] = int(amount_val)  # note the model expects integer casting based on astype(int)
-            feature_dict['Year'] = year_val
-            feature_dict['Month'] = month_val
+            feature_dict['Year'] = year_encoded
+            feature_dict['Month'] = month_encoded
             
             # Helper to set dummy encoded features if selected category is not the base case
             def set_dummy(prefix, selected_val):
