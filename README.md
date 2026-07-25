@@ -61,7 +61,7 @@ Operating system analysis
 Correlation heatmap
 Feature relationship analysis
 
-#🤖 Machine Learning Models
+# 🤖 Machine Learning Models
 
 The following models were trained and evaluated:
 
@@ -83,28 +83,28 @@ ROC-AUC Score
 Instead of relying on default model parameters, Optuna was used to automatically search for optimal hyperparameter combinations.
 Hyperparameters tuned include:
 
-**Decision Tree**
-max_depth
-min_samples_split
-min_samples_leaf
+**Decision Tree : **
+max_depth,
+min_samples_split,
+min_samples_leaf;
 
-**Random Forest**
-n_estimators
-max_depth
-min_samples_split
-min_samples_leaf
+**Random Forest : **
+n_estimators,
+max_depth,
+min_samples_split,
+min_samples_leaf;
 
-**Gradient Boosting**
-n_estimators
-learning_rate
-max_depth
-min_samples_split
-min_samples_leaf
+**Gradient Boosting : **
+n_estimators,
+learning_rate,
+max_depth,
+min_samples_split,
+min_samples_leaf;
 
-**XGBoost**
-n_estimators
-learning_rate
-max_depth
+**XGBoost : **
+n_estimators,
+learning_rate,
+max_depth,
 min_child_weight
 
 # 📈 Model Performance
